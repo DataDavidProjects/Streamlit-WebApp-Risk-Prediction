@@ -225,7 +225,7 @@ def main():
         """
         <style>
         .reportview-container {
-            background: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp2757874.gif&f=1&nofb=1");transparency:0.8;
+            background: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp2757874.gif&f=1&nofb=1");
             background-position: 0px 0;
             background-size: 100%
            
@@ -366,6 +366,10 @@ def main():
 
     #______________________ Bulk Prediction _____________________________
     if activity == "Bulk Prediction":
+
+        st.write("In this section you can upload a csv file and score multiple records")
+        st.write("Upload the file with data in the sidebar and click on predict, once it will appear, to get the bulk prediction.")
+
         uploaded_file = st.sidebar.file_uploader(label='Upload the csv or excel file',
                                                  type=['csv','xlsx'])
         st.sidebar.write("You need the following indicators:")
